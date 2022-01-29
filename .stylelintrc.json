@@ -7,7 +7,8 @@
     "./*.md"
   ],
   "plugins": [
-    "stylelint-order"
+    "stylelint-order",
+    "stylelint-css-modules"
   ],
   "extends": [
     "stylelint-config-standard-scss",
@@ -35,6 +36,17 @@
     "order/properties-alphabetical-order": true,
     "scss/at-rule-no-unknown": true,
     "scss/comment-no-empty": null,
-    "scss/map-keys-quotes": null
+    "scss/map-keys-quotes": null,
+    "css-modules/composed-class-names": true,
+    "css-modules/css-variables": [true, {
+      "resolve": {
+        "extensions": [
+          ".css",
+          ".scss",
+          ".module.css",
+          ".module.scss"
+        ]
+      }
+    }]
   }
 }

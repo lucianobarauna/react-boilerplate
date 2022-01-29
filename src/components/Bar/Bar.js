@@ -1,10 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import './bar.scss'
+import styles from './bar.module.scss'
 
 const Bar = ({ children }) => {
-  return <div className={'bar'}>{children}</div>
+  return <div className={`${styles.bar}`}>{children}</div>
 }
 
 Bar.propTypes = {

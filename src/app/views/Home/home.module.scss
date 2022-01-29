@@ -1,0 +1,16 @@
+.home {
+  background-color: red;
+
+}
+
+
+/* stylelint-disable-next-line selector-pseudo-class-no-unknown */
+:global(body.dark) header {
+  background-color: green;
+
+}
+
+.casa-nova {
+  background-color: rebeccapurple;
+  color: #fff;
+}

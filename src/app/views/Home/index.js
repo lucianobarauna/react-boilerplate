@@ -10,13 +10,31 @@ import { Bar, Button, Foo } from '@gabemule/react-boilerplate'
 // InitialSetting store
 import { setInitialSetting, useInitialSetting } from '@/store/InitialSetting'
 
+import styles from './home.module.scss'
+
 const Home = () => {
   const dispatch = useDispatch()
 
   const { isInitialized } = useInitialSetting()
 
   return (
-    <div className={'home'}>
+    <div className={styles.home}>
+      <header>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae rem
+          esse rerum dolorum quidem! Tenetur cupiditate atque architecto ipsum
+          ducimus exercitationem? Laboriosam voluptatum quis aperiam pariatur
+          atque repellendus ex necessitatibus?
+        </p>
+      </header>
+      <div className={styles['casa-nova']}>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. A tempora ad
+          placeat autem porro error explicabo perferendis accusamus enim
+          similique qui officia sed ut laboriosam asperiores iusto dolorem,
+          perspiciatis quis!
+        </p>
+      </div>
       <Bar>
         <h1> Home </h1>
       </Bar>
