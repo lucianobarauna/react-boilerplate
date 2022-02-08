@@ -11,6 +11,7 @@ const configCssModuleLoader = {
     modules: {
       auto: true,
       localIdentName: '[name]__[local]_[hash:base64:5]'
+      // localIdentName: '[hash:base64:5]' em prod aqui ficaria
     },
     importLoaders: 2,
   }
